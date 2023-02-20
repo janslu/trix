@@ -1,6 +1,6 @@
 {
-  "name": "trix",
-  "version": "2.0.4",
+  "name": "trix-kinscape",
+  "version": "1.0.0",
   "description": "A rich text editor for everyday writing",
   "main": "dist/trix.umd.min.js",
   "module": "dist/trix.esm.min.js",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basecamp/trix.git"
+    "url": "git+https://github.com/janslu/trix.git"
   },
   "keywords": [
     "rich text",
@@ -21,7 +21,7 @@
   "author": "37signals, LLC",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/basecamp/trix/issues"
+    "url": "https://github.com/janslu/trix/issues"
   },
   "homepage": "https://trix-editor.org/",
   "devDependencies": {
@@ -65,6 +65,9 @@
     "postrelease": "git push && git push --tags",
     "dev": "web-dev-server --app-index index.html  --root-dir dist --node-resolve --open",
     "start": "yarn build-assets && concurrently --kill-others --names js,css,dev-server 'yarn watch' 'yarn build-css --watch' 'yarn dev'"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {}
 }
