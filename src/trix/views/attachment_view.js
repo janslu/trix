@@ -28,7 +28,7 @@ export default class AttachmentView extends ObjectView {
 
     const href = this.getHref()
     if (href) {
-      innerElement = makeElement({ tagName: "a", editable: false, attributes: { href, tabindex: -1 } })
+      innerElement = makeElement({ tagName: "a", editable: false, attributes: { href, tabindex: -1, draggable: false } })
       figure.appendChild(innerElement)
     }
 
